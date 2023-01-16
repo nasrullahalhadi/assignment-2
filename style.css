@@ -39,6 +39,7 @@ p{
 /* --------Header Area---------  */
 header {
    background: #FFF4E7;
+   width: 100%;
 }
 .nav {
     display: flex;
@@ -161,39 +162,69 @@ ul li a{
 }
 
 /* --------some-facts---------- */
-
-.some-facts{
-    margin: 100px auto;
-}
-
 .facts-info{
+
     margin: 50px 0;
 }
-.facts-info > h2 ,p {
-    margin: 10px 0;
-}
-
-.facts-boxes{
-    margin: 40px 0;
+.facts{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly     
+ 
     
 }
 
-.facts-boxes .box{
+.facts-box{
     height: 150px;
     width: 150px;
     padding: 10px;
-    border: 2px solid #FF900E;
-    border-radius: 10px;
-    align-items: center;    
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    transition: width 1s, height 1s, linear 1s;
+    
     
 }
 
-.box .img{
+.facts-box:hover{
+    transform:rotate(45deg);
+    background: #FF900E;
+    color: #ffffff;
+     
+}
+.facts-img{
+    justify-content: center;
+    justify-items: center;
+}
+.facts-img > img{
     width: 50px;
     
 }
+
+
+/* Subscribe */
+
+.news-latter{
+    height: 200px;
+    background:#FF900E;
+    padding: 50px;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+
+input  {
+    height: 50px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+}
+.input {
+    height: 50px;
+    width: 20%;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
 
 /* --------testmonial -------*/
 
@@ -229,5 +260,13 @@ footer{
     background: #FFF4E7;
     border-radius: 20px;
     text-align: center;
+    
+}
+
+/* Responsive style */
+
+
+
+@media screen (min-width: 576px) {
     
 }
